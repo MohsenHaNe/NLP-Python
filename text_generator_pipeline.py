@@ -9,7 +9,7 @@ Original file is located at
 
 from transformers import pipeline
 
-generator = pipeline('text-generation',model='distilgpt2')# or bigscience, ...
+generator = pipeline('text-generation',model='distilgpt2')##or bigscience
 
 texts = generator('The weather is very hot this season',max_length=20,num_return_sequences=3)
 
